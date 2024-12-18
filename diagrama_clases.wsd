@@ -1,0 +1,36 @@
+@startuml
+class Pago {
+    - id: Long
+    - reservacion: Reservacion
+    - monto: Double
+    - fechaPago
+}
+Pago "0..*" - "1..*" Reservacion
+
+class Habitacion {
+    -numero: Long
+    -tipo:String
+    -precio: Double
+    -estado: String
+    + cambiarEstado(nuevoestado:String):void
+}
+Habitacion "0..*" - "0..*" Reservacion
+
+class Huesped {
+    -id: String
+    -nombre:String
+    -historialReservaciones: List<Reservacion>
+}
+Huesped "0..*" - "0..*" Reservacion
+
+class Reservacion {
+    -id: String
+    -habitacion: Habitacion
+    -huesped: Huesped
+    - fechaEntrada: Date
+    - fechaSalida: Date
+    - costoTotal: Double
+    + calcularCostoTotal():Double
+}
+Reservacion "0..*" - "0..*" Pago
+@enduml

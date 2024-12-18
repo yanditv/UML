@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>105</y><w>182</w><h>91</h></coordinates><panel_attributes>Habitación
+<diagram program="umletino" version="15.1"><zoom_level>20</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>80</x><y>402</y><w>520</w><h>260</h></coordinates><panel_attributes>Habitación
 --
 -numero: Long
 -tipo:String
@@ -6,14 +6,14 @@
 -estado: String
 --
 + cambiarEstado(nuevoestado:String):void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>266</y><w>182</w><h>63</h></coordinates><panel_attributes>Huesped
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>862</y><w>520</w><h>180</h></coordinates><panel_attributes>Huesped
 --
 -id: String
 -nombre:String
 -historialReservaciones: List&lt;Reservacion&gt;
 --
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>434</x><y>84</y><w>182</w><h>105</h></coordinates><panel_attributes>Reservacion
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1120</x><y>342</y><w>520</w><h>300</h></coordinates><panel_attributes>Reservacion
 --
 -id: String
 -habitacion: Habitacion
@@ -24,17 +24,17 @@
 --
 + calcularCostoTotal():Double
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>0</y><w>182</w><h>91</h></coordinates><panel_attributes>Pago
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>102</y><w>520</w><h>260</h></coordinates><panel_attributes>Pago
 --
 - id: Long
 - reservacion: Reservacion
 - monto: Double
 - fechaPago
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>182</y><w>301</w><h>140</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>622</y><w>860</w><h>400</h></coordinates><panel_attributes>lt=-
 m1=0..1
-m2=0..*</panel_attributes><additional_attributes>10;170;390;170;390;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>133</y><w>203</w><h>28</h></coordinates><panel_attributes>lt=-
+m2=0..*</panel_attributes><additional_attributes>10;170;390;170;390;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>482</y><w>580</w><h>80</h></coordinates><panel_attributes>lt=-
 m1=0..1
-m2=0..*</panel_attributes><additional_attributes>10;10;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>28</y><w>315</w><h>70</h></coordinates><panel_attributes>lt=-
+m2=0..*</panel_attributes><additional_attributes>10;10;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>182</y><w>900</w><h>200</h></coordinates><panel_attributes>lt=-
 m1=0..1
 m2=0..1</panel_attributes><additional_attributes>10;10;410;10;410;80</additional_attributes></element></diagram>
