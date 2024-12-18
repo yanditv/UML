@@ -14,3 +14,5 @@ Diseñar un sistema de reservación de habitaciones para un hotel que permita ma
   - Registrar nuevas habitaciones y huespedes
   - Registrar y cancelar reservaciones
   - Registrar pagos
+
+# DIAGRAMA DE CASOS DE USO
