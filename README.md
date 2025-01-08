@@ -40,9 +40,11 @@ Los empleados deben:
 
 - Generar reportes sobre las ocupaciones (habitaciones ocupadas, disponibles, etc.).
 - Generar reportes financieros (ingresos generados por las reservas).
-- El sistema debe enviar notificaciones automáticas:
-  - Al cliente, cuando su reserva se confirma.
-  - Al cliente, cuando se acerca la fecha de su check-in.
+
+El sistema debe enviar notificaciones automáticas:
+
+- Al cliente, cuando su reserva se confirma.
+- Al cliente, cuando se acerca la fecha de su check-in.
 
 ### Tareas para el diagrama:
 
